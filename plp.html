@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced HTML5 example with lists, tables, media, and a complete validated form.">
+  <title>Advanced HTML5 – Content and Forms</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Advanced HTML5: Enhancing Content & Forms</h1>
+    <p>Demonstrating lists, tables, media, and fully validated forms with native HTML5 features.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Key Web Development Topics</h2>
+      <p>Here’s a breakdown of skills you’ll need as a modern web developer:</p>
+
+      <h3>Ordered List: Learning Path</h3>
+      <ol>
+        <li>HTML5 Semantics</li>
+        <li>CSS for Styling</li>
+        <li>JavaScript for Interactivity</li>
+        <li>Accessibility & SEO</li>
+      </ol>
+
+      <h3>Unordered List: Tools</h3>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Git & GitHub</li>
+        <li>Browser DevTools</li>
+        <li>Package Managers (npm, pip)</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Sample Course Schedule</h2>
+      <table border="1">
+        <caption>Web Technologies Weekly Plan</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML5 Basics</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>CSS Styling</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>JavaScript Intro</td>
+            <td>3 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Demonstration</h2>
+      <figure>
+        <img src="developer.jpg" alt="A developer coding on a laptop" width="300">
+        <figcaption>Image of a web developer at work.</figcaption>
+      </figure>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video width="400" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your name"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com" autocomplete="email"><br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" placeholder="5–15 letters or numbers"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Choose your favorite technology:</p>
+          <input type="radio" id="html" name="tech" value="HTML" required>
+          <label for="html">HTML</label>
+
+          <input type="radio" id="css" name="tech" value="CSS">
+          <label for="css">CSS</label>
+
+          <input type="radio" id="js" name="tech" value="JavaScript">
+          <label for="js">JavaScript</label><br><br>
+
+          <label for="skills">Select your skills:</label><br>
+          <input type="checkbox" id="frontend" name="skills" value="Frontend">
+          <label for="frontend">Frontend</label>
+
+          <input type="checkbox" id="backend" name="skills" value="Backend">
+          <label for="backend">Backend</label>
+
+          <input type="checkbox" id="design" name="skills" value="Design">
+          <label for="design">Design</label><br><br>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="Kenya">Kenya</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Agreement</legend>
+          <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="#">terms and conditions</a>.
+          </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Advanced HTML5 Example | Created for PLP Web Technologies Classroom</p>
+  </footer>
+</body>
+</html>
